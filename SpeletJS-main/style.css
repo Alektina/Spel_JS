@@ -273,11 +273,16 @@ section{
     position: absolute;
     background: #fff;
     border-radius: 7px;
-    transition: transform 0.25s linear;
+    transition: transform 0.50s linear;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+
+    backface-visibility: hidden;
+   
+    
   }
   .card .front-view img{
     max-width: 17px;
+    
   }
   .card .back-view{
     transform: rotateY(-180deg);
@@ -368,5 +373,4 @@ section{
       background: #6563ff;
     }
   }
-
 
