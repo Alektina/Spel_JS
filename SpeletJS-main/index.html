@@ -151,13 +151,16 @@
                 </div>
               </li>
               <div class="details">
-                <p class="time">
-                  Tid: <span><b>30</b>s</span>
+                <p class="time">Tid:
+                  <select id="timeDropdown" class="custom-select">
+                    <option value="15">15s</option>
+                    <option value="30">30s</option>
+                    <option value="60">60s</option>
+                  </select>
+                  <span id="countdown"></span>
                 </p>
-                <p class="flips">
-                  Antal: <span><b>0</b></span>
-                </p>
-                <button>Starta om</button>
+                <p class="flips">Antal: <span id="flipsCount"><b>0</b></span></p>
+                <button id="restartButton">Starta om</button>
               </div>
             </ul>
           </div>
